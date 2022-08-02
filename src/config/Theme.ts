@@ -1,11 +1,11 @@
 const theme = {
   colors: {
     black: '#000000',
-    white: 'ffffff',
+    white: '#ffffff',
     orange30: '#FF8008',
     orange20: '#ff8800',
     orange10: '#ffe5cf',
-    yellow: '#FFC837',
+    yellow: '#FFD200',
   },
 };
 
