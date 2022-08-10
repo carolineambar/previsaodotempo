@@ -6,6 +6,7 @@ export const Main = styled.main`
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
+  gap: 40px;
 `;
 
 export const Title = styled.h1`

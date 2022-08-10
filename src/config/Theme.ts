@@ -6,6 +6,7 @@ const theme = {
     orange20: '#ff8800',
     orange10: '#ffe5cf',
     yellow: '#FFD200',
+    grey: '#545454',
   },
 };
 
