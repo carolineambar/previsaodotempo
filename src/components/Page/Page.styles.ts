@@ -7,6 +7,10 @@ export const Main = styled.main`
   justify-content: center;
   min-height: 100vh;
   gap: 40px;
+
+  @media (min-width: 1200px) {
+    height: 50vh;
+  }
 `;
 
 export const Title = styled.h1`
