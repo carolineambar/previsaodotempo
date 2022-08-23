@@ -12,12 +12,6 @@ export const CapitalsContainer = styled.div`
   align-items: center;
 `;
 
-export const Line = styled.div`
-  background-color: ${({ theme }) => theme.colors.white};
-  height: 1px;
-  width: 100%;
-`;
-
 export const TitleContainer = styled.h2`
   color: ${({ theme }) => theme.colors.white};
 `;

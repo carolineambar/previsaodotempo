@@ -17,3 +17,9 @@ export const Title = styled.h1`
   color: ${({ theme }) => theme.colors.white};
   text-align: center;
 `;
+
+export const Line = styled.div`
+  background-color: ${({ theme }) => theme.colors.white};
+  height: 1px;
+  width: 50%;
+`;

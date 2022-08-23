@@ -3,15 +3,41 @@ import {
   TitleContainer,
   TableContainer,
   CapitalsContainer,
-  Line,
   TitleTable,
   ContentTable,
   TableRow,
 } from './Container.styles';
 
+const capitais = [
+  {
+    min: 18,
+    max: 27,
+    name: 'Rio de Janeiro',
+  },
+  {
+    min: 14,
+    max: 22,
+    name: 'São Paulo',
+  },
+  {
+    min: 21,
+    max: 32,
+    name: 'Belo Horizonte',
+  },
+  {
+    min: 24,
+    max: 37,
+    name: 'Brasília',
+  },
+  {
+    min: 24,
+    max: 37,
+    name: 'Belém',
+  },
+];
+
 const Container = () => (
   <CapitalsContainer>
-    <Line />
     <TitleContainer>Capitais</TitleContainer>
     <TableContainer>
       <TitleTable>
@@ -21,21 +47,13 @@ const Container = () => (
         </TableRow>
       </TitleTable>
       <ContentTable>
-        <TableRow>
-          <td>18º</td>
-          <td>27º</td>
-          <td>Rio de Janeiro</td>
-        </TableRow>
-        <TableRow>
-          <td>14º</td>
-          <td>22º</td>
-          <td>São Paulo</td>
-        </TableRow>
-        <TableRow>
-          <td>21º</td>
-          <td>32º</td>
-          <td>Belo Horizonte</td>
-        </TableRow>
+        {capitais.map(({ min, max, name }) => (
+          <TableRow>
+            <td>{min}</td>
+            <td>{max}</td>
+            <td>{name}</td>
+          </TableRow>
+        ))}
       </ContentTable>
     </TableContainer>
   </CapitalsContainer>

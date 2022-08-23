@@ -2,50 +2,88 @@ import React from 'react';
 import {
   ToggleContainer,
   Line,
-  InfoOne,
+  TempSens,
   MinMax,
-  InfoTwo,
-  InfoThree,
-  InfoFour,
-  InfoFive,
+  VenUm,
+  TempWeek,
+  NextDays,
+  TempNextDays,
+  ArrowMax,
+  ArrowMin,
+  MaxMin,
+  Temp,
+  Head,
+  SenVenUm,
 } from './Toggle.styles';
 
 const Toggle = () => (
   <ToggleContainer>
-    <h6>Niterói, RJ - Brasil</h6>
-    <div> 20ºC Nublado </div>
-    <InfoOne>
+    <Head>Niterói, RJ - Brasil</Head>
+    <Temp> 20ºC Nublado </Temp>
+    <TempSens>
       <MinMax>
-        <div>
-          <div>16º</div>
-        </div>
-        <div>
-          <div>25º</div>
-        </div>
+        <MaxMin>
+          <ArrowMin />
+          <b>16º</b>
+        </MaxMin>
+        <MaxMin>
+          <ArrowMax />
+          <b>25º</b>
+        </MaxMin>
       </MinMax>
-      <div>Sensação 19ºC</div>
-    </InfoOne>
-    <InfoTwo>
-      <div>Vento 18km/h</div>
-      <div>Umidade 89%</div>
-    </InfoTwo>
+      <SenVenUm>
+        <span>Sensação</span>
+        <b>19ºC</b>
+      </SenVenUm>
+    </TempSens>
+    <VenUm>
+      <SenVenUm>
+        <span>Vento</span>
+        <b>18km/h</b>
+      </SenVenUm>
+      <SenVenUm>
+        <span>Umidade</span>
+        <b>89%</b>
+      </SenVenUm>
+    </VenUm>
     <Line />
-    <InfoThree>
-      <InfoFour>
-        <div>Terça</div>
-        <div>Quarta</div>
-        <div>Quinta</div>
-        <div>Sexta</div>
-        <div>Sábado</div>
-      </InfoFour>
-      <InfoFive>
-        <div>18º 26º</div>
-        <div>18º 28º</div>
-        <div>19º 30º</div>
-        <div>23º 35º</div>
-        <div>23º 37º</div>
-      </InfoFive>
-    </InfoThree>
+    <TempWeek>
+      <NextDays>
+        <b>Terça</b>
+        <TempNextDays>
+          <span>18°</span>
+          <span>26°</span>
+        </TempNextDays>
+      </NextDays>
+      <NextDays>
+        <b>Quarta</b>
+        <TempNextDays>
+          <span>18°</span>
+          <span>28°</span>
+        </TempNextDays>
+      </NextDays>
+      <NextDays>
+        <b>Quinta</b>
+        <TempNextDays>
+          <span>19°</span>
+          <span>30°</span>
+        </TempNextDays>
+      </NextDays>
+      <NextDays>
+        <b>Sexta</b>
+        <TempNextDays>
+          <span>23°</span>
+          <span>35°</span>
+        </TempNextDays>
+      </NextDays>
+      <NextDays>
+        <b>Sábado</b>
+        <TempNextDays>
+          <span>23°</span>
+          <span>37°</span>
+        </TempNextDays>
+      </NextDays>
+    </TempWeek>
   </ToggleContainer>
 );
 
