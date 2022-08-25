@@ -13,13 +13,19 @@ export const Main = styled.main`
   }
 `;
 
-export const Title = styled.h1`
+export const Title = styled.h1<{ small?: boolean }>`
   color: ${({ theme }) => theme.colors.white};
   text-align: center;
+  ${({ small }) => small && 'font-size: 27px;'};
 `;
 
 export const Line = styled.div`
   background-color: ${({ theme }) => theme.colors.white};
   height: 1px;
   width: 50%;
+`;
+
+export const TableWrapper = styled.div`
+  display: flex;
+  gap: 1.5rem;
 `;

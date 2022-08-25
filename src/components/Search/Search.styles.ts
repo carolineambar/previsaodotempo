@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import { ReactComponent as Logo } from '../../assets/search.svg';
 
-export const StyleSearch = styled.form`
+export const Form = styled.form`
   display: flex;
   flex-direction: row;
 `;
 
-export const StyleInput = styled.input`
+export const Input = styled.input`
   outline: none;
   height: 2.5rem;
   width: 20rem;
@@ -17,7 +17,7 @@ export const StyleInput = styled.input`
   border-left: 1px solid ${({ theme }) => theme.colors.orange30};
 `;
 
-export const StyleButton = styled.button`
+export const Button = styled.button`
   text-align: right;
   border: none;
   border-bottom: 1px solid ${({ theme }) => theme.colors.orange30};
