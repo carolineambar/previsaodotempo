@@ -13,8 +13,8 @@ const Table: React.FC<{ capitais: Array<City> }> = ({ capitais }) => (
     <Content>
       {capitais.map(({ min, max, name }) => (
         <Row>
-          <td>{min}</td>
-          <td>{max}</td>
+          <td>{min}°</td>
+          <td>{max}°</td>
           <td>{name}</td>
         </Row>
       ))}

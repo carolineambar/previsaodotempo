@@ -122,8 +122,8 @@ const Page = () => {
         <Line />
         <Title small>Capitais</Title>
         <TableWrapper>
-          <Table capitais={cities.slice(0, halfLength)} />
-          <Table capitais={cities.slice(halfLength, capitais.length)} />
+          <Table capitais={capitais.slice(0, halfLength)} />
+          <Table capitais={capitais.slice(halfLength, capitais.length)} />
         </TableWrapper>
       </Main>
     </ThemeProvider>
