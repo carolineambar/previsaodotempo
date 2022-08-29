@@ -6,17 +6,14 @@ export const Main = styled.main`
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-  gap: 40px;
-
-  @media (min-width: 1200px) {
-    height: 50vh;
-  }
+  gap: 30px;
 `;
 
 export const Title = styled.h1<{ small?: boolean }>`
   color: ${({ theme }) => theme.colors.white};
   text-align: center;
   ${({ small }) => small && 'font-size: 27px;'};
+  ${({ small }) => small && 'text-align: left;'};
 `;
 
 export const Line = styled.div`
@@ -28,4 +25,10 @@ export const Line = styled.div`
 export const TableWrapper = styled.div`
   display: flex;
   gap: 1.5rem;
+`;
+
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 `;

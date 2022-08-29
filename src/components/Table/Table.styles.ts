@@ -1,9 +1,5 @@
 import styled from 'styled-components';
 
-export const Container = styled.table`
-  padding-left: 2rem;
-`;
-
 export const Title = styled.thead`
   font-size: 9px;
 `;

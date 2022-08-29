@@ -1,9 +1,9 @@
 import React from 'react';
-import { Container, Title, Content, Row } from './Table.styles';
+import { Title, Content, Row } from './Table.styles';
 import { City } from '../../types/city';
 
 const Table: React.FC<{ capitais: Array<City> }> = ({ capitais }) => (
-  <Container>
+  <table>
     <Title>
       <Row>
         <th>Mín.</th>
@@ -19,7 +19,7 @@ const Table: React.FC<{ capitais: Array<City> }> = ({ capitais }) => (
         </Row>
       ))}
     </Content>
-  </Container>
+  </table>
 );
 
 export default Table;
