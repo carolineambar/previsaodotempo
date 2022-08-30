@@ -1,46 +1,113 @@
-# Getting Started with Create React App
+# Previsão do Tempo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição do Projeto
 
-## Available Scripts
+Esse projeto foi realizado para testar novos conhecimentos utilizando Styled Components: https://styled-components.com/ e TypeScript e foi baseado no seguinte desafio: https://github.com/1STi/desafio-frontend.
 
-In the project directory, you can run:
+## Tecnologias usadas:
 
-### `npm start`
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="40" height="40" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width="40" height="40" />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Esse projeto foi criado com React [Create React App] (https://github.com/facebook/create-react-app).
 
-### `npm test`
+## Começando com React
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Você precisa ter [NPM](https://nodejs.org/en/) ou [Yarn](https://yarnpkg.com/pt-BR/) instalado para rodar essa aplicação.
 
-### `npm run build`
+#### Clone esse projeto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+  git clone https://github.com/carolineambar/previsaodotempo
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Entre na pasta
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+  cd previsaodotempo
+```
 
-### `npm run eject`
+#### Instale dependencias
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+  yarn
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+or
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+  npm install
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### Para rodar!
 
-## Learn More
+```
+  yarn start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+or
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+  npm start
+```
+
+## Estrutura do projeto
+
+```shell
+|-- public
+|---- favicon.ico
+|---- index.html
+|---- logo192.png
+|---- logo512.png
+|---- manifest.json
+|---- robots.txt
+|-- src
+|---- api
+|------ index.ts
+|---- assets
+|------ arrow.svg
+|------ search.svg
+|---- components
+|------ Card
+|-------- Card.styles.ts
+|-------- Card.tsx
+|-------- index.ts
+|------ Page
+|-------- index.ts
+|-------- Page.styles.ts
+|-------- Page.tsx
+|------ Search
+|-------- index.ts
+|-------- Search.styles.ts
+|-------- Search.tsx
+|------ Table
+|-------- index.ts
+|-------- Table.styles.ts
+|-------- Table.tsx
+|---- config
+|------ GlobalStyle.ts
+|------ Theme.ts
+|---- types
+|------ city.ts
+|---- App.tsx
+|---- index.ts
+|---- react-app-env.d.ts
+|---- reportWebVitals.ts
+|---- setupTests.ts
+|-- .eslintrc
+|-- .gitignore
+|-- .prettierrc
+|-- package-lock.json
+|-- package.json
+|-- tsconfig.json
+```
+
+Na pasta ```public``` estão as configurações do React.
+
+Na pasta ```src``` estão as pastas de ```api``` onde está as configurações do backend, a ```assets``` onde estão o ícones e imagens utilizadas e ```components``` onde estão os componentes da aplicação subdivididos com documentos tsx para funcionalidade e ts para os estilos com Styled Components além dos arquivos de funcionalidade e o arquivo ```App.tsx``` onde ficou a aplicação principal.
+
+Os demais arquivos são de configuração do Servidor como o ```package.json```.
+
+## Futuras melhorias 
+
+Atualmente consumi a seguinte API criada no gist: https://gist.githubusercontent.com/juunegreiros/c871c0fff7e43ffa1e32b6adb21f685c/raw/3db783c9a010eb99d42e1b740bc8309a0a33366c/clima.json , porém como futura melhoria irei consumir uma API de sites com previsão do tempo como o Yahoo, por exemplo.
