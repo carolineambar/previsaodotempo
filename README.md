@@ -2,7 +2,7 @@
 
 ## Descrição do Projeto
 
-Esse projeto foi realizado para testar novos conhecimentos utilizando Styled Components para estilização: https://styled-components.com/ e TypeScript e foi baseado no seguinte desafio: https://github.com/1STi/desafio-frontend.
+Esse projeto foi realizado para testar novos conhecimentos utilizando Styled Components para estilização: https://styled-components.com/ e praticar o que aprendi com TypeScript e foi baseado no seguinte desafio: https://github.com/1STi/desafio-frontend.
 
 ## Tecnologias usadas:
 
